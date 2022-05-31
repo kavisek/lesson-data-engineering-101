@@ -22,7 +22,7 @@ jupyter:
 
 .PHONY: notebook
 notebook:
-	poetry run jupyter notebook --allow-root 
+	poetry run jupyter notebook --allow-root --NotebookApp.token='' --NotebookApp.password=''
 
 .PHONY: slides
 slides:
